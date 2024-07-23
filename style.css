@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #106586;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.pizzas {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.pizza {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 30%; 
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.pizza img {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.cart {
+    background-color: #106586;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.cart h2 {
+    margin-bottom: 10px;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    margin-bottom: 10px;
+}
+
+.checkout {
+    background-color: #0bb830;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.messages {
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.messages p {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.messages p[x-show] {
+    transition: opacity 1s;
+}
+
+.messages p:not([x-show]) {
+    display: none;
+}
